@@ -1,0 +1,234 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    padding: 0;
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+}
+
+.human {
+    color: #18BC9C;
+}
+
+.computer {
+    color: #105F84;
+}
+
+.possible {
+    color: #b71717;
+    background-color: rgba(183, 23, 23, 0.2);
+    border-radius: 110px;
+}
+
+.column {
+    float: left;
+}
+
+.column h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+    font-size: 22px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.row ul li {
+    display: inline;
+    margin-right: 12px;
+}
+
+#history ul li {
+    display: block;
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+#players ul {
+    margin-left: 25px;
+}
+
+#players ul li:last-child {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+    display: inline;
+}
+
+#players,
+#history {
+    width: 20%;
+}
+
+#boardWrapper {
+    width: 60%;
+}
+
+#board {
+    font-size: 35px;
+}
+
+.input-wrap {
+    margin-top: 100px;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 100px auto;
+}
+
+.row {
+    height: 100px;
+    padding: 10px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.error {
+    margin-top: 10px;
+    color: #b71717;
+    text-transform: uppercase;
+    display: none;
+}
+
+#computer-btn {
+    cursor: pointer;
+    width: 200px;
+    font-size: 24px;
+    box-shadow: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+    border: solid 5px #c9c9c9;
+    color: #c9c9c9;
+    margin: 0 auto;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+#computer-btn:hover {
+    background-color: #105F84;
+    color: #fff;
+    border-color: #105F84
+}
+
+input[type="text"] {
+    display: block;
+    text-transform: uppercase;
+    color: #969696;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 24px;
+    box-shadow: none;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+    border: solid 5px #c9c9c9;
+    transition: border 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="text"].focus {
+    border: solid 5px #18BC9C;
+}
+
+#player-select, #gameover-select {
+    clear: both;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background: #0b0b0b;
+    opacity: .8;
+}
+
+.modal-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+}
+
+.modal {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 350px auto;
+    text-align: left;
+    z-index: 1045;
+    background-color: #fff;
+    width: 550px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.modal ul {
+    padding: 0;
+    list-style: none;
+    margin-left: 33px;
+}
+
+.modal ul li {
+    display: inline-block;
+}
+
+.player-btn, .gameover-btn {
+    cursor: pointer;
+    width: 200px;
+    font-size: 24px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px;
+    border: solid 5px #c9c9c9;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.computer-btn {
+    background-color: #105F84;
+    border-color: #105F84;
+}
+
+.human-btn {
+    background-color: #18BC9C;
+    border-color: #18BC9C;
+}
+
+.modal ul li:last-child div {
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+}
+
+#topbar {
+    height: 100px;
+    width: 100%;
+    background-color: #105F84;
+}
+
+#logo {
+    font-size: 48px;
+    color: #fff;
+    margin: -180px 0 100px 0;
+}
+
+#computerInput,
+#humanInput,
+#gameOver {
+    display: none;
+}

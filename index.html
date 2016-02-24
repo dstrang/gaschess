@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <title>Gas Chess</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="topbar"></div>
+        <div class="wrapper">
+        <div id="logo" class="text-center">gaschess.js</div>
+            <div id="players" class="column">
+                <div id="computer" class="row">
+                    <h3 class="text-center computer">COMPUTER</h3>
+                    <hr />
+                    <ul></ul>
+                </div>
+                <div id="human" class="row">
+                    <h3 class="text-center human">HUMAN</h3>
+                    <hr />
+                    <ul></ul>
+                </div>
+            </div>
+            <div id="boardWrapper" class="column">
+                <div id="board" class="text-center">
+                    <pre id="gameBoard"></pre>
+                </div>
+                <div class="input-wrap text-center">
+                    <div id="computerInput">
+                        <h3 class="text-center computer">COMPUTER'S TURN</h3>
+                        <div id="computer-btn">GO!</div>
+                        <div class="error"></div>
+                    </div>
+                    <div id="humanInput">
+                        <h3 class="text-center human">HUMAN'S TURN</h3>
+                        <input type="text" id="human-input" class="text-center" maxlength="4" />
+                        <div class="error"></div>
+                        <button id="randomHumanMove" onclick="randomHumanMove();" class="text-center" style="margin-top:10px; display:none;">Random</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="history" class="column">
+                <div class="row">
+                <h3 class="text-center">HISTORY</h3>
+                <hr />
+                <ul></ul>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="modal-container"> 
+            <div id="gameStart" class="modal">
+                <div id="player-select">
+                    <h3 class="text-center">Who Should go first?</h3>
+                    <hr />
+                    <ul>
+                        <li><div class="player-btn computer-btn text-center">Computer</div></li>
+                        <li><div class="player-btn human-btn text-center">Human</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="gameOver" class="modal">
+                <div id="gameover-select">
+                    <h3 class="text-center"></h3>
+                    <hr />
+                    <ul>
+                        <li><div class="gameover-btn computer-btn text-center">Close</div></li>
+                        <li><div class="gameover-btn human-btn text-center">New Game</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="gaschess.js"></script>
+</html>
